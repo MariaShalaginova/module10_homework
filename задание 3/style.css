@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  /* background: linear-gradient(130deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%); */
+  background-color: #fff;
+  font-family: monospace;
+}
+
+main {
+  width: 100%;
+  margin: 50px 0;
+  text-align: center;
+}
+
+#frame {
+  position: sticky
+}
+
+input {
+  background: unset;
+  border: 3px solid rgb(110, 181, 240);
+  /* border-radius: 5px; */
+  padding: 5px;
+  font-family: monospace;
+  font-weight: bold;
+  color: rgb(95, 91, 91);
+  width: 20%;
+  transition: border-color 400ms ease;
+  height: auto;
+}
+
+input.error {
+  border-color: red;
+}
+
+input:focus {
+  outline: none;
+  border-color: #0eadaf;
+}
+
+button {
+  background: rgb(110, 181, 240);
+  color: #fff;
+  font-family: monospace;
+  font-weight: bold;
+  border: none;
+  padding: 7px 10px;
+  /* border-radius: 5px; */
+  cursor: pointer;
+  transition: background 400ms ease;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  background: #0b898b;
+}
+
+#output {
+  display:flex;
+  /* margin: 30px 0; */
+  font-weight: bold;
+  font-size: 14px;
+  margin: auto;
+  margin-top: 20px;
+  width: 30.5%;
+  border: 3px solid rgb(110, 181, 240);
+  min-height: 500px;
+  height: fit-content;
+  display:flex;
+  flex-direction: column;
+}
+
+.message-server {
+  margin: 5px;
+  color: red;
+  max-width: 70%;
+  word-break: break-all;
+}
+
+.message-client {
+  margin-right: -9px;
+  color: blue;
+  max-width: 70%;
+  word-break: break-all;
+  align-self: end;
+  margin: 5px;
+}
+
+p, a {
+  border: 3px solid rgb(110, 181, 240); 
+  padding: 5px;
+  border-radius: 5px;
+  width: fit-content;
+}
+ 
